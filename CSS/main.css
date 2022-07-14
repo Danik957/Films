@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  background: #eef8ff;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+/* Шапка сайта */
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
+}
+
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Suez One', serif;
+}
+
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#about > a {
+  color: #fff;
+}
+
+#about > a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+/* Стили для фиксированной шапки */
+
+.fixed {
+  z-index: 900;
+  background-color: rgb(146, 146, 146);
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: #bbbbbb;
+}
+
+.fixed #about a {
+  color: #bbbbbb;
+}
+.fixed #about a:hover {
+  color: #7c7c7c;
+}
+
+/* Главный блок на сайте */
+
+#top {
+  width: 100%;
+  background-image: url(https://thumbs.dfs.ivi.ru/storage3/contents/a/1/6a948673a6db896cf63e9b80414e61.jpg);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+#top h1 {
+  padding-top: 20%;
+  font-size: 100px;
+}
+
+#top h3 {
+  color: #ccc;
+  font-size: 65px;
+}
+
+@media (min-width: 1001px) {
+  #top {
+    font-size: 3em;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+  #top {
+    font-size: 2em;
+    height: 700px;
+  }
+
+  #top h1 {
+    padding-top: 20%;
+    font-size: 70px;
+  }
+
+  #top h3 {
+    color: #ccc;
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 650px) and (min-width: 451px) {
+  #top {
+    font-size: 1.3em;
+    height: 500px;
+  }
+
+  #top h1 {
+    padding-top: 35%;
+    font-size: 55px;
+  }
+
+  #top h3 {
+    color: #ccc;
+    font-size: 35px;
+  }
+}
+
+/* Блок с новостями */
+
+#main {
+  float: left;
+  background-color: #f6f6f6;
+  border-top: 2px solid silver;
+  color: #484848;
+  font-size: 1.3em;
+  width: 100%;
+  padding: 0 10% 0 10%;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.text {
+  text-align: center;
+  margin: 20px;
+  font-size: 25px;
+}
+
+#main2 {
+  float: left;
+  background-color: #f6f6f6;
+  border-top: 2px solid silver;
+  color: #484848;
+  font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+  #main {
+    padding: 0 10% 0 10%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  #main {
+    padding: 100px 10%;
+    width: 100%;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  #main div {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .intro {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+}
+
+#main h2 {
+  font-size: 3em;
+}
+#main span {
+  color: #a0a0a0;
+}
+
+/* Блок новинки */
+
+#overview {
+  float: left;
+  background-image: url(https://img.championat.com/news/big/z/z/obzor-matrica-4-voskreshenie_1639587558419925185.jpg);
+
+  background-blend-mode: multiply;
+  background-color: #403f40;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 100px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+#overview h2 {
+  font-size: 4em;
+}
+#overview h4 {
+  color: #ccc;
+}
+
+@media (min-width: 561px) {
+  #overview h2 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 560px) {
+  #overview h2 {
+    font-size: 2em;
+  }
+}
+
+/**/
+.img_poster {
+  float: left;
+  width: 30%;
+  height: 90%;
+  margin-right: 5%;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+.img_poster:nth-child(odd) {
+  margin-left: 0%;
+}
+
+@media (max-width: 700px) {
+  #overview .img_poster {
+    width: 80% !important;
+    margin-right: 0 !important;
+    margin-left: 10% !important;
+  }
+}
+.name {
+  float: left;
+  width: 100%;
+  font-size: 2em;
+  margin-top: 100px;
+}
+
+/**/
+
+/* #overview .img {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 50px;
+} */
+
+/* #overview .img:nth-child(odd) {
+  margin-left: 18%;
+} */
+
+#overview img {
+  background: 0;
+  padding: 1px;
+  border: 0px solid silver;
+  float: left;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+}
+
+#overview span {
+  float: left;
+  width: 100%;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  #overview .img {
+    width: 80% !important;
+    margin-right: 0 !important;
+    margin-left: 10% !important;
+  }
+}
+
+/* Блок с контактами */
+#contacts {
+  width: 100%;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  border-top: 4px solid #ccc;
+  background: #f4f4f4;
+
+  background-image: url(https://img.audiomania.ru/images/content/5b42c281d8615d2c4b07cb00d396d342.jpg);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+#contacts h5 {
+  font-size: 3em;
+  color: #e2eaec;
+}
+
+#form_input {
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+
+@media (min-width: 1051px) {
+  #form_input {
+    width: 35%;
+    margin-left: 38%;
+  }
+}
+
+@media (max-width: 1050px) {
+  #form_input {
+    width: 90%;
+    margin-left: 10%;
+  }
+}
+
+#form_input label {
+  color: #f3f5f3;
+  cursor: pointer;
+  font-size: 1.4em;
+  font-family: 'Roboto Slab', serif;
+}
+
+#form_input label > span {
+  color: #e87e7e;
+}
+
+#form_input input,
+#form_input textarea {
+  margin-bottom: 10px;
+  width: 70%;
+  padding: 10px 2%;
+  border-radius: 7px;
+  border: 2px solid silver;
+  font-size: 0.9em;
+  color: #4a4a4a;
+}
+
+#form_input input:focus,
+#form_input textarea:focus {
+  border-color: #333;
+}
+
+.btn {
+  float: left;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 1.2em;
+  background-color: #ec6550;
+  text-shadow: #454545 0 0 2px;
+  cursor: pointer;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+
+.btn:hover {
+  background-color: #c15443;
+}
+
+/* фильмы */
+
+#faq {
+  background-color: #fff;
+  border-top: 2px dashed #e4e3e3;
+  width: 100%;
+  float: left;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media (min-width: 801px) {
+  #faq div {
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+  }
+}
+
+@media (max-width: 800px) {
+  #faq div {
+    width: 80%;
+    margin-left: 10%;
+    float: left;
+  }
+}
+
+#faq .title {
+  font-weight: lighter;
+  color: #a3a0ad;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+#faq .title a {
+  text-decoration: none;
+  color: #a3a0ad;
+}
+
+#faq .heading {
+  color: #7d7d7d;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#faq p {
+  font-family: Arimo, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #4a4a4a;
+  font-size: 0.95em;
+  margin-bottom: 20px;
+}
+#faq .title {
+  cursor: pointer;
+}
+#faq .heading {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #a3a0ad;
+}
+
+.page {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.img {
+  max-width: 90%;
+}
+
+.item {
+  margin: 15px 0;
+  text-align: center;
+}
+.spinner {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border: 10px dashed;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-top-color: #aaa;
+  border-right-color: #555;
+  border-bottom-color: #000;
+  animation: spin 500ms infinite linear;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.form-control {
+  padding: 8px;
+  border: 2px solid #4d35d1;
+  border-radius: px;
+  outline: none;
+}
+
+.buttonback {
+  width: 100px;
+  outline: none;
+  border: 0;
+  background: transparent;
+  margin: 5px 0 5px 0;
+}
+
+.buttonbackSVG {
+  width: 38px;
+  height: 38px;
+}
+
+@media (min-width: 700px) {
+  .buttonbackSVG {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 699px) {
+  .buttonbackSVG {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.postHover {
+  transition: all 0.3s ease-in-out;
+}
+.postHover:hover {
+  transform: scale(0.9);
+}
+
+/* Стиль постов */
+
+.titlePost {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+
+.linkImgPost {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.InfoPost {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-bottom: 50px;
+  text-align: end;
+}
+
+.mainInfoPost {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+}
+
+.title2Post {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+}

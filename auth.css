@@ -1,0 +1,51 @@
+.modal-title{
+    color: rgb(248, 245, 245);
+}
+body{
+    width: 100%;
+    background-image:  url(https://img5.goodfon.ru/wallpaper/nbig/5/f0/venom-venom-uzhasy-fantastika-sushchestvo-simbiot-tom-khardi.jpg);
+    background-blend-mode: multiply;
+}
+
+.modal-dialog 
+{
+    background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(https://www.meme-arsenal.com/memes/4a7f9cf8a2f69c9a9596814dc6be850a.jpg); 
+    border-radius: 30px;
+}
+.button{
+    background:#eee;
+    color:#088;
+    text-decoration:none;
+    display:block;
+    width:100px;
+    text-align:center;
+    margin:20px auto;
+    padding:10px 10px;
+    transition:all 0.3s;
+}
+
+.button:hover{
+    box-shadow:0px -5px 0 #088 inset;
+}
+
+.close-auth{
+    
+ 
+    color:#088;
+    
+}   
+   
+
+.label-auth{
+    text-align:center;
+    color: rgb(248, 245, 245);
+    font-family: 'Suez One', serif;
+    font-size: 20px;
+}
+input{
+    
+    border: 1px solid #cccccc;
+   border-radius: 5px;
+   height: 30px;
+   width: 200px;
+}

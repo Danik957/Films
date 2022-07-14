@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Cinema</title>
+  <!-- <link rel="stylesheet" href="/CSS/main.css"> 
+  <link rel="stylesheet" href="style.css"> -->
+  <!-- <link rel="stylesheet" href="search.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+  <link
+      href="https://cdn.muicss.com/mui-latest/css/mui.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+
+  <!-- <script src="./script.js" defer></script> -->
+</head>
+<body>
+  <div class="page">
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Cinema</span>
+    </div>
+
+    <div id="about"> 
+      <a href="#" title="Новости кино" onclick="slowScroll('#main')">Новости кино</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Новинки">Новинки</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Фильмы">Фильмы</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+      <a href="search.html" title="Поиск">Поиск</a>
+    </div>
+
+    <div class="sing">
+      <span class="user-name"></span>
+      <a href="./auth.html" class="mui-btn mui-btn--fab mui-btn--accent floating-btn" id="modal-btn">Signin</a>
+    </div>
+   
+
+    <div class="container">
+      <div class="jumbotron">
+          <form id='search-form'>
+              <!-- <input type="text" class="form-control" id='searchText' 
+              placeholder="Поиск"> -->
+          </form>
+      </div>
+  </div>
+    
+  </header>
+
+  <div id="top">
+   <h1>Кино</h1>
+   <h3>как смысл жизни</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Новости кино!</h2>
+      <span>Самые актуальные новости из мира кино</span>
+    </div>
+
+    <table id="main2" cellpadding="5" cellspacing="0">
+      <tr>
+       <td width="33%">
+        <div class="text">
+          <span>Кассовые сборы "Нет пути домой" в мире составляют безумные $1,738 млрд! Проект занимает 6 место в списке самых кассовых фильмов.</span>
+          <br><br><span>Вышел второй сезон «Эйфории» (спустя почти три года!).</span></br></br>
+        </div>
+       </td>
+       <td width="33%">
+        <div class="text">
+          <span>Disney, Sony и Warner Bros. приостанавливают выход своих фильмов в России. Премьера «Бэтмена» отменена.</span>
+          <br><br><span>Netflix приостанавливает свою деятельность на территории России.</span></br></br>
+        </div>
+       </td>
+       <td width="33%">
+        <div class="text">
+          <span>Культовая антиутопия «Сквозь снег» выйдет в повторный прокат 24 марта.</span>
+          <br><br><span>Вышел трейлер третьего сезона «Пацанов».</span></br></br>
+        </div>
+       </td>
+      </tr>
+      </table>
+  </div>
+
+  <div id="overview">
+    <h2>Новинки</h2>
+    <h4>Самый свежий контент</h4>
+
+    <!-- <div class="img">
+      <img src="https://mediaserver.etobilet.ru/upload/movie/trailer/img/image_4874_6609.jpg" alt="">
+      <span>Жажда золота 2022, Австралия, Триллеры</span>
+    </div>
+    <div class="img">
+      <img src="https://thumbs.dfs.ivi.ru/storage6/contents/3/e/c6ac4e6739ec3893360d8da37cada1.jpg" alt="">
+      <span>Вечные 2021, Великобритания, Фантастика</span>
+    </div>
+    <div class="img">
+        <img src="https://zetfliks.vip/wp-content/uploads/2022/01/euforia_2022_olmksaf.jpg" alt="">
+        <span>Эйфория 2019 - ..., США, Драмы</span>
+      </div>
+      <div class="img">
+        <img src="https://2datyvyhoda.ru/wp-content/uploads/2021/12/Star-Wars-The-Book-of-Boba-Fett-2022-S1.jpg" alt="">
+        <span>Книга Бобы Фетта 2021 - ..., США, Фантастика</span>
+      </div> -->
+
+      <div class="container">
+        <div id="movies" class="row"></div>
+    </div>
+
+  </div>
+
+ 
+
+  <div id="faq">
+    <div>
+      <span class="title"><a href="selections.html">Подборки</a></span><br>
+      <p></p>
+      <span class="heading">Захватывающие</span>
+        <p></p>
+      <span class="heading">На реальных событиях</span>
+        <p></p>
+      <span class="heading">Молодёжные комедии</span>
+        <p></p>
+        <span class="heading">Лучшее в 2021 году</span>
+        <p></p>
+      <span class="heading">Новогодние фильмы</span>
+        <p></p>
+      <span class="heading">В духе Ричи и Тарантино</span>
+        <p></p>
+    </div>
+    <div>
+      <span class="title">Жанры</span><br>
+      <p></p>
+      <span class="heading">Боевики</span>
+        <p></p>
+      <span class="heading">Детективы</span>
+        <p></p>
+      <span class="heading">Документальные</span>
+        <p></p>
+        <span class="heading">Комедии</span>
+        <p></p>
+      <span class="heading">Ужасы</span>
+        <p></p>
+      <span class="heading">Фантастика</span>
+        <p></p>
+    </div>
+    <div>
+      <span class="title">Сериалы</span><br>
+      <p></p>
+      <span class="heading">Криминальные</span>
+        <p></p>
+      <span class="heading">Романтические</span>
+        <p></p>
+      <span class="heading">Фантастические</span>
+        <p></p>
+        <span class="heading">Дорамы</span>
+        <p></p>
+      <span class="heading">Комедийные</span>
+        <p></p>
+      <span class="heading">Медицинские</span>
+        <p></p>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+      <label for="name">Логин <span>*</span></label><br>
+      <input type="text" placeholder="Введите логин" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea placeholder="Нажмите кнопку отправить" name="message" id="message"></textarea><br>
+      <a href="mailto:danik55redko97@gmail.com?subject=Обращение%20в%20поддержку&body=Обращение:"><div id="mess_send" class="btn">Отправить</div>
+      </a>
+    </form> 
+
+    <!-- <a href="mailto:danik55redko97@gmail.com?subject=Обращение%20в%20поддержку&body=Обращение:"><div id="mess_send" class="btn">Отправить</div>
+    </a> -->
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+
+<footer>
+  <div class="footer-content">
+    <g3>Cinema</g3>
+    <p>Cinema — мы лучшие в мире по актульным новостям из мира кино</p>
+    <ul class="socials">
+      <li><a href="https://www.facebook.com/profile.php?id=100010272162348"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/home"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.youtube.com/channel/UCYQ5G3tvIY4TKiEBtPbz7oA"><i class="fa fa-youtube"></i></a></li>
+      <li><a href="https://vk.com/danik_957"><i class="fa fa-vk"></i></a></li>
+      <li><a href="https://t.me/lookfilmstiktok535"><i class="fa fa-telegram"></i></a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>copyright &copy;2022 Cinema. designed by <span>Danik</span></p>
+  </div>
+</footer>
+</div>
+
+
+</body>
+</html>
